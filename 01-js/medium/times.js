@@ -9,5 +9,15 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+
+    const time1 = Date.now();
+    let res = 0;
+    for(let i =1;i<=n;i++)
+    {
+        res += i;
+    }
+
+    const time2 = Date.now();
+
+    return (time2 - time1)/1000;
 }
